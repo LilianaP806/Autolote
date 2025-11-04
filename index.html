@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autolote | Venta de autos nuevos y usados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader-container" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="logotipo de autos.png" alt="Autolote Logo" />
+      <h1>Autolote</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Inicio -->
+<section id="inicio" class="hero">
+  <!-- Contenedor del video con borde redondeado -->
+  <div class="hero-video-container">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="video-autos.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="hero-content">
+    <h2>Tu mejor opción en autos nuevos y usados</h2>
+    <p>
+      En <strong>Autolote</strong>, ubicada en la Colonia México Norte, Mérida, Yucatán,
+      nos especializamos en la compra y venta de autos garantizados, ofreciendo seguridad,
+      confianza y el mejor servicio a nuestros clientes.
+    </p>
+    <a href="#catalogo" class="btn">Ver Catálogo</a>
+  </div>
+</section>
+
+
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo de Vehículos</h2>
+    <div class="car-grid">
+      <div class="car"><img src="Nissan Versa 2019.jpg" alt="Nissan Versa 2019"><h3>Nissan Versa 2019</h3><p>$250,000 MXN</p></div>
+      <div class="car"><img src="Mazda 3 2021.jpg" alt="Mazda 3 2021"><h3>Mazda 3 2021</h3><p>$380,000 MXN</p></div>
+      <div class="car"><img src="Toyota Corolla.jpeg" alt="Toyota Corolla"><h3>Toyota Corolla</h3><p>$350,000 MXN</p></div>
+      <div class="car"><img src="Volkswagen Jetta.jpg" alt="Volkswagen Jetta"><h3>Volkswagen Jetta</h3><p>$330,000 MXN</p></div>
+      <div class="car"><img src="Kia Rio.jpg" alt="Kia Rio"><h3>Kia Rio</h3><p>$310,000 MXN</p></div>
+      <div class="car"><img src="Hyundai Elantra.jpg" alt="Hyundai Elantra"><h3>Hyundai Elantra</h3><p>$340,000 MXN</p></div>
+      <div class="car"><img src="Honda Civic.jpg" alt="Honda Civic"><h3>Honda Civic</h3><p>$360,000 MXN</p></div>
+      <div class="car"><img src="Ford Fusion.jpg" alt="Ford Fusion"><h3>Ford Fusion</h3><p>$370,000 MXN</p></div>
+      <div class="car"><img src="Chevrolet Onix.jpg" alt="Chevrolet Onix"><h3>Chevrolet Onix</h3><p>$290,000 MXN</p></div>
+    </div>
+
+    <div class="modelo3d">
+      <h3>Vista 3D interactiva</h3>
+      <iframe src="https://storage.net-fs.com/hosting/2727323/483/" width="100%" height="500" style="border:none;"></iframe>
+    </div>
+  </section>
+
+<!-- Nosotros -->
+<section id="nosotros" class="nosotros">
+  <h2>Sobre Nosotros</h2>
+
+  <div class="contenedor-nosotros">
+    <div class="texto-nosotros">
+      <h3>Misión</h3>
+      <p>
+        Brindar a nuestros clientes una experiencia de compra y venta de autos basada en la
+        confianza, la transparencia y la calidad, ofreciendo vehículos certificados y un servicio
+        profesional que garantice su satisfacción total.
+      </p>
+
+      <h3>Visión</h3>
+      <p>
+        Ser reconocidos como el autolote líder en Yucatán, destacando por nuestra excelencia en
+        atención al cliente, la innovación en nuestros servicios y la calidad de los vehículos
+        que ofrecemos.
+      </p>
+
+      <h3>Valores</h3>
+      <ul>
+        <li><strong>Confianza:</strong> trabajamos con transparencia y honestidad en cada trato.</li>
+        <li><strong>Calidad:</strong> seleccionamos vehículos con los más altos estándares.</li>
+        <li><strong>Compromiso:</strong> nos esforzamos por superar las expectativas de nuestros clientes.</li>
+        <li><strong>Servicio:</strong> ofrecemos atención personalizada y asesoría profesional.</li>
+        <li><strong>Innovación:</strong> adoptamos herramientas digitales y procesos modernos para mejorar la experiencia de compra.</li>
+      </ul>
+    </div>
+
+    <div class="img-nosotros">
+      <img src="Poster.png" alt="Imagen autos">
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+
+  <div class="contenedor-contacto">
+    <!-- Formulario -->
+    <div class="formulario-contacto">
+      <p>📍 Colonia México Norte, Mérida, Yucatán</p>
+      <form>
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Mapa -->
+    <div class="mapa-contacto">
+      <iframe 
+        src="https://www.google.com/maps?q=Colonia%20México%20Norte%20Mérida%20Yucatán&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+ <!-- Redes sociales -->
+    <div class="card">
+      <a href="#" class="socialContainer containerOne">
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="socialSvg">
+          <path d="M349.33 69.33H162.67C110.93 69.33 69.33 110.93 69.33 162.67v186.66c0 51.74 41.6 93.34 93.34 93.34h186.66c51.74 0 93.34-41.6 93.34-93.34V162.67c0-51.74-41.6-93.34-93.34-93.34zM256 346.67a90.67 90.67 0 1 1 90.67-90.67A90.8 90.8 0 0 1 256 346.67zm96-170.67a21.33 21.33 0 1 1 21.33-21.33A21.33 21.33 0 0 1 352 176z"/>
+        </svg>
+      </a>
+      <a href="#" class="socialContainer containerTwo">
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="socialSvg">
+          <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558A296.144 296.144 0 0 1 0 408.084a218.353 218.353 0 0 0 25.654 1.473 209.91 209.91 0 0 0 130.327-44.843 104.855 104.855 0 0 1-97.743-72.533 132.3 132.3 0 0 0 19.825 1.736 110.721 110.721 0 0 0 27.518-3.602A104.822 104.822 0 0 1 20.8 186.626v-1.325a105.23 105.23 0 0 0 47.429 13.319 104.826 104.826 0 0 1-32.435-139.762A297.875 297.875 0 0 0 252.47 162.15a118.406 118.406 0 0 1-2.594-23.937 104.827 104.827 0 0 1 181.263-71.694 209.62 209.62 0 0 0 66.51-25.361 104.997 104.997 0 0 1-46.011 57.835A209.056 209.056 0 0 0 512 97.248a226.492 226.492 0 0 1-52.63 54.468z"/>
+        </svg>
+      </a>
+      <a href="#" class="socialContainer containerThree">
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="socialSvg">
+          <path d="M426.072 64H85.93A21.932 21.932 0 0 0 64 85.93v340.143A21.932 21.932 0 0 0 85.93 448h340.143A21.932 21.932 0 0 0 448 426.072V85.93A21.932 21.932 0 0 0 426.072 64zM164.752 384h-64v-192h64zm-32-217.609a37.126 37.126 0 1 1 37.125-37.126 37.126 37.126 0 0 1-37.125 37.126zM384 384h-64v-97.92c0-23.35-.467-53.34-32.507-53.34-32.548 0-37.547 25.43-37.547 51.77V384h-64v-192h61.44v26.22h.874a67.421 67.421 0 0 1 60.731-33.37c64.96 0 76.81 42.8 76.81 98.44z"/>
+        </svg>
+      </a>
+      <a href="#" class="socialContainer containerFour">
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="socialSvg">
+          <path d="M256.064 0C114.616 0 0 114.616 0 256.064 0 394.952 111.6 512 256.064 512c43.784 0 84.932-10.888 121.304-30.008L512 512l-29.208-133.072C501.112 340.932 512 299.784 512 256.064 512 114.616 397.384 0 256.064 0zm124.128 369.816c-17.528 7.768-35.36 11.96-52.24 11.96-28.544 0-56.736-8.568-81.12-25.224l-18.056-12.04-74.92 19.72 19.928-73.952-12.016-18.12C137.392 239.176 128 214.744 128 189.848c0-17.28 4.136-34.4 12.32-51.088 15.248-30.472 41.68-53.152 73.84-63.072 16.512-5.016 33.68-7.552 51.048-7.552 17.52 0 34.76 2.592 51.52 7.736 32.096 9.72 59.48 32.504 74.808 63.12 8.12 16.728 12.264 33.888 12.264 51.368 0 55.184-32.032 104.04-80.936 129.456z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Pie -->
+  <footer>
+    <p>&copy; 2025 Autolote. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Loader
+    window.addEventListener("load", function () {
+      document.getElementById("loader").style.display = "none";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+/* === Loader (Uiverse.io) === */
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  color: #ff0000;
+  position: relative;
+  background: radial-gradient(11.2px, currentColor 94%, #0000);
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top left,
+              radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top right,
+              radial-gradient(10.08px at top right   ,#0000 94%,currentColor) bottom left,
+              radial-gradient(10.08px at top left    ,#0000 94%,currentColor) bottom right;
+  background-size: 22.4px 22.4px;
+  background-repeat: no-repeat;
+  animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+
+@keyframes loader {
+  33% { inset: -11.2px; transform: rotate(0deg); }
+  66% { inset: -11.2px; transform: rotate(90deg); }
+  100% { inset: 0; transform: rotate(90deg); }
+}
+
+.loader-container {
+  position: fixed;
+  background: #000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* === General === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #fff;
+  background-color: #0b0b0b;
+  scroll-behavior: smooth;
+}
+
+/* ====== Hero (Inicio) ====== */
+.hero {
+  position: relative;
+  height: 85vh; /* No ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;      /* un poco más grande que el contenedor */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.5;     /* suaviza el fondo para mejor lectura */
+}
+
+/* Contenido sobre el video */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+/* ====== Hero (Inicio) ====== */
+.hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Contenedor del video con borde redondeado */
+.hero-video-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;           /* ancho más pequeño */
+  height: 100%;          /* altura más pequeña */
+  transform: translate(-50%, -50%);
+  overflow: hidden;     /* asegura que el video respete los bordes */
+  border-radius: 20px;  /* bordes redondeados */
+  z-index: 0;
+}
+
+/* Video dentro del contenedor */
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* rellena el contenedor sin deformarse */
+  opacity: 0.6;         /* fondo visible pero texto legible */
+}
+
+/* Contenido sobre el video */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+
+/* Header */
+header {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  width: 70px;
+}
+
+header h1 {
+  color: #ff0000;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* Hero */
+.hero {
+  background: url('https://cdn.pixabay.com/photo/2017/01/06/19/15/car-1957037_1280.jpg') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0,0,0,0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+}
+
+/* Catálogo de Vehículos */
+.catalogo {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.catalogo h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: white;
+}
+
+/* Grid de autos */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 30px;                             /* espacio entre los autos */
+  justify-items: center;
+}
+
+/* Tarjeta individual de auto */
+.car {
+  background-color: #262424;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px; /* limita el tamaño de cada tarjeta */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.car img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* evita que la imagen se deforme */
+}
+
+.car h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.car p {
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Efecto hover */
+.car:hover {
+  transform: translateY(-5px);
+}
+
+.modelo3d {
+  margin-top: 50px;
+}
+
+/* ====== Sección Nosotros ====== */
+.nosotros {
+  background-color: #111;
+  color: white;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.nosotros h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #ff0000;
+}
+
+/* Contenedor principal que junta texto e imagen */
+.contenedor-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+
+/* Área del texto */
+.texto-nosotros {
+  flex: 1; /* ocupa la mitad del ancho */
+}
+
+/* Área de la imagen */
+.img-nosotros {
+  flex: 1; /* ocupa la otra mitad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-nosotros img {
+  width: 100%;
+  height: auto;         /* mantiene proporciones originales */
+  max-width: 500px;     /* evita que sea más ancha de lo necesario */
+  border-radius: 10px;
+  object-fit: contain;  /* asegura que no se recorte */
+}
+
+
+/* Responsivo para móviles */
+@media (max-width: 900px) {
+  .contenedor-nosotros {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-nosotros img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Nosotros */
+.nosotros {
+  background-color: #0f0f0f;
+  padding: 60px 30px;
+}
+
+.texto-nosotros {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.texto-nosotros h3 {
+  color: #ff0000;
+  margin-top: 20px;
+}
+
+.texto-nosotros ul {
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* ====== Sección Contacto ====== */
+.contacto {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #ff0000;
+  margin-bottom: 40px;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* hace que ambos tengan el mismo alto */
+  gap: 40px;
+}
+
+/* Columna del formulario */
+.formulario-contacto {
+  flex: 1;
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.formulario-contacto button {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #cc0000;
+}
+
+/* Columna del mapa */
+.mapa-contacto {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mapa-contacto iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Responsivo (para móviles o pantallas pequeñas) */
+@media (max-width: 900px) {
+  .contenedor-contacto {
+    flex-direction: column;
+  }
+
+  .mapa-contacto {
+    height: 300px;
+  }
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* From Uiverse.io by elisapi */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+.card {
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(226, 18, 21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
