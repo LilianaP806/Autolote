@@ -1,4 +1,3 @@
-/* === Loader (Uiverse.io) === */
 .loader {
   width: 44.8px;
   height: 44.8px;
@@ -38,7 +37,7 @@
   z-index: 9999;
 }
 
-/* === General === */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -47,10 +46,10 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ====== Hero (Inicio) ====== */
+
 .hero {
   position: relative;
-  height: 85vh; /* No ocupa toda la pantalla */
+  height: 85vh; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,20 +58,20 @@ body {
   overflow: hidden;
 }
 
-/* Video de fondo */
+
 .hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120%;      /* un poco más grande que el contenedor */
+  width: 120%;     
   height: auto;
   transform: translate(-50%, -50%);
   z-index: 0;
   object-fit: cover;
-  opacity: 0.5;     /* suaviza el fondo para mejor lectura */
+  opacity: 0.5;     
 }
 
-/* Contenido sobre el video */
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -81,7 +80,7 @@ body {
   border-radius: 10px;
   max-width: 700px;
 }
-/* ====== Hero (Inicio) ====== */
+
 .hero {
   position: relative;
   height: 85vh;
@@ -92,28 +91,28 @@ body {
   color: white;
 }
 
-/* Contenedor del video con borde redondeado */
+
 .hero-video-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;           /* ancho más pequeño */
-  height: 100%;          /* altura más pequeña */
+  width: 90%;           
+  height: 100%;          
   transform: translate(-50%, -50%);
-  overflow: hidden;     /* asegura que el video respete los bordes */
-  border-radius: 20px;  /* bordes redondeados */
+  overflow: hidden;     
+  border-radius: 20px;  
   z-index: 0;
 }
 
-/* Video dentro del contenedor */
+
 .hero-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* rellena el contenedor sin deformarse */
-  opacity: 0.6;         /* fondo visible pero texto legible */
+  object-fit: cover;    
+  opacity: 0.6;         
 }
 
-/* Contenido sobre el video */
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -124,7 +123,7 @@ body {
 }
 
 
-/* Header */
+
 header {
   background-color: #111;
   display: flex;
@@ -167,7 +166,7 @@ nav ul li a:hover {
   color: #ff0000;
 }
 
-/* Hero */
+
 .hero {
   background: url('https://cdn.pixabay.com/photo/2017/01/06/19/15/car-1957037_1280.jpg') center/cover no-repeat;
   height: 85vh;
@@ -199,7 +198,7 @@ nav ul li a:hover {
   background-color: #cc0000;
 }
 
-/* Catálogo de Vehículos */
+
 .catalogo {
   padding: 50px 20px;
   text-align: center;
@@ -212,22 +211,21 @@ nav ul li a:hover {
   color: white;
 }
 
-/* Grid de autos */
+
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 30px;                             /* espacio entre los autos */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;                             
   justify-items: center;
 }
 
-/* Tarjeta individual de auto */
 .car {
   background-color: #262424;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 300px; /* limita el tamaño de cada tarjeta */
+  max-width: 300px; 
   text-align: center;
   transition: transform 0.3s;
 }
@@ -235,7 +233,7 @@ nav ul li a:hover {
 .car img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* evita que la imagen se deforme */
+  object-fit: cover; 
 }
 
 .car h3 {
@@ -250,7 +248,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Efecto hover */
+
 .car:hover {
   transform: translateY(-5px);
 }
@@ -259,7 +257,7 @@ nav ul li a:hover {
   margin-top: 50px;
 }
 
-/* ====== Sección Nosotros ====== */
+
 .nosotros {
   background-color: #111;
   color: white;
@@ -273,7 +271,7 @@ nav ul li a:hover {
   color: #ff0000;
 }
 
-/* Contenedor principal que junta texto e imagen */
+
 .contenedor-nosotros {
   display: flex;
   justify-content: space-between;
@@ -282,14 +280,14 @@ nav ul li a:hover {
   text-align: left;
 }
 
-/* Área del texto */
+
 .texto-nosotros {
-  flex: 1; /* ocupa la mitad del ancho */
+  flex: 1; 
 }
 
-/* Área de la imagen */
+
 .img-nosotros {
-  flex: 1; /* ocupa la otra mitad */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,14 +295,14 @@ nav ul li a:hover {
 
 .img-nosotros img {
   width: 100%;
-  height: auto;         /* mantiene proporciones originales */
-  max-width: 500px;     /* evita que sea más ancha de lo necesario */
+  height: auto;         
+  max-width: 500px;     
   border-radius: 10px;
-  object-fit: contain;  /* asegura que no se recorte */
+  object-fit: contain;  
 }
 
 
-/* Responsivo para móviles */
+
 @media (max-width: 900px) {
   .contenedor-nosotros {
     flex-direction: column;
@@ -317,7 +315,6 @@ nav ul li a:hover {
   }
 }
 
-/* Nosotros */
 .nosotros {
   background-color: #0f0f0f;
   padding: 60px 30px;
@@ -338,7 +335,7 @@ nav ul li a:hover {
   line-height: 1.8;
 }
 
-/* ====== Sección Contacto ====== */
+
 .contacto {
   background-color: #1a1a1a;
   color: white;
@@ -354,11 +351,11 @@ nav ul li a:hover {
 .contenedor-contacto {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* hace que ambos tengan el mismo alto */
+  align-items: stretch; 
   gap: 40px;
 }
 
-/* Columna del formulario */
+
 .formulario-contacto {
   flex: 1;
   background-color: #111;
@@ -398,7 +395,7 @@ nav ul li a:hover {
   background-color: #cc0000;
 }
 
-/* Columna del mapa */
+
 .mapa-contacto {
   flex: 1;
   border-radius: 10px;
@@ -412,7 +409,6 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* Responsivo (para móviles o pantallas pequeñas) */
 @media (max-width: 900px) {
   .contenedor-contacto {
     flex-direction: column;
@@ -442,15 +438,14 @@ button:hover {
   background-color: #cc0000;
 }
 
-/* Footer */
+
 footer {
   background-color: #000;
   text-align: center;
   padding: 15px;
   font-size: 14px;
 }
-
-/* From Uiverse.io by elisapi */ 
+ 
 .card {
   width: fit-content;
   height: fit-content;
@@ -463,10 +458,10 @@ footer {
 }
 
 .card {
-  margin: 0 auto; /* centra horizontalmente */
+  margin: 0 auto; 
 }
 
-/* for all social containers*/
+
 .socialContainer {
   width: 52px;
   height: 52px;
@@ -478,25 +473,25 @@ footer {
   transition-duration: 0.3s;
   border-radius: 30px;
 }
-/* instagram*/
+
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
-/* twitter*/
+
 .containerTwo:hover {
   background-color: #00acee;
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
-/* linkdin*/
+
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
-/* Whatsapp*/
+
 .containerFour:hover {
   background-color: #128c7e;
   transition-duration: 0.3s;
@@ -529,5 +524,121 @@ footer {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+
+
+
+.corporativo {
+  background-color: #0d0d0d;
+  padding: 60px 10%;
+  color: white;
+  text-align: center;
+}
+
+.corporativo h2 {
+  color: #ff0000;
+  font-size: 2.3em;
+  margin-bottom: 40px;
+}
+
+.corp-resena, 
+.corp-audio, 
+.corp-publicaciones, 
+.corp-encuesta, 
+.corp-suscripcion {
+  margin-bottom: 50px;
+}
+
+/* Videos */
+.corp-videos .video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.video-item video {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #ff0000;
+}
+
+
+.video-mazda {
+  width: 80%;       /* Reduce el tamaño (puedes usar 70%, 60%, etc.) */
+  display: block;
+  margin: 0 auto;   /* Centrar el video */
+  border-radius: 10px;
+}
+
+/* Galería */
+.corp-galeria .galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.corp-galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.corp-galeria img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.galeria-grid .imagen-grande {
+  grid-column: 1 / span 3;  /* La imagen ocupará todo el ancho de las 3 columnas */
+  width: 60%;               /* Ajusta el tamaño como prefieras */
+  margin: 0 auto;           /* Centra la imagen */
+  display: block;
+}
+
+
+/* Publicaciones */
+.publicacion {
+  background-color: #161616;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 800px;
+  border-left: 4px solid #ff0000;
+  text-align: left;
+  border-radius: 5px;
+}
+
+/* Suscripción */
+.corp-suscripcion input {
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.corp-suscripcion button {
+  padding: 12px 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .corp-videos .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corp-galeria .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .corp-suscripcion input {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
